@@ -424,6 +424,16 @@ call <sid>hi('gitcommitOverflow', s:cdRed, {}, 'none', {})
 call <sid>hi('gitcommitSummary', s:cdPink, {}, 'none', {})
 call <sid>hi('gitcommitBlank', s:cdPink, {}, 'none', {})
 
+" Haskell:
+call <sid>hi('haskellBottom', s:cdLightRed, {}, 'none', {})
+call <sid>hi('haskellIdentifier', s:cdLightBlue, {}, 'none', {})
+call <sid>hi('haskellOperators', s:cdYellow, {}, 'none', {})
+call <sid>hi('haskellType', s:cdBlueGreen, {}, 'none', {})
+
+if get(g:, 'haskell_enable_quantification', 0)
+    call <sid>hi('haskellForall', s:cdBlue, {}, 'none', {})
+endif
+
 " Lua:
 call <sid>hi('luaFuncCall', s:cdYellow, {}, 'none', {})
 call <sid>hi('luaFuncArgName', s:cdLightBlue, {}, 'none', {})
